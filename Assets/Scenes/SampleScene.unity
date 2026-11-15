@@ -630,7 +630,7 @@ MonoBehaviour:
   sprintSpeed: 7
   jumpHeight: 1.1
   gravity: -20
-  lookSensitivity: 0.3
+  lookSensitivity: 0.2
   maxLookAngle: 90
 --- !u!114 &483218807
 MonoBehaviour:
