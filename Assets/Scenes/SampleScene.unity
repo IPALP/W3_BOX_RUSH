@@ -681,6 +681,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f85bdb3bf97141969dba1af27b3b98c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeliveryZone
+  points: 10
   destroyDelay: 0.5
 --- !u!65 &530389200
 BoxCollider:
@@ -1166,7 +1167,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e300244892d98419097b627f4cc1f096, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BoxSpawner
-  boxPrefabs: {fileID: 3661720477454318336, guid: 4dee86f2662e94355ab2b1d536cf85f1, type: 3}
+  goodBoxPrefabs:
+  - {fileID: 204062068139190750, guid: a2d6f2c8fd75e45999d5748b32e3dc71, type: 3}
+  - {fileID: 566163949276287818, guid: 02c4d2bd93c2244fe8d41fbb337d18b0, type: 3}
+  brokenBoxPrefabs:
+  - {fileID: 5779843613759070196, guid: d8f16ecbd8e9d473db413ab1b29bc2ee, type: 3}
+  - {fileID: 5878885273428125594, guid: 9f967a9096d7d4f52b4ab0be560b4ab6, type: 3}
+  woodenCratePrefab: {fileID: 3661720477454318336, guid: 4dee86f2662e94355ab2b1d536cf85f1, type: 3}
+  brokenChance: 0.25
+  crateChance: 0.15
   interval: 4
   maxAlive: 10
   randomYaw: 15

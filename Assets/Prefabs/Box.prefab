@@ -79,7 +79,7 @@ PrefabInstance:
       addedObject: {fileID: 2857457343956681520}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c3f5aa413416e4177aedec7381177337, type: 3}
       insertIndex: -1
-      addedObject: {fileID: -5863193737106776006}
+      addedObject: {fileID: 875320492348644535}
     - targetCorrespondingSourceObject: {fileID: -8391222552659086748, guid: c3f5aa413416e4177aedec7381177337, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4608458203265345811}
@@ -116,7 +116,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 2
---- !u!65 &-5863193737106776006
+--- !u!65 &875320492348644535
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
