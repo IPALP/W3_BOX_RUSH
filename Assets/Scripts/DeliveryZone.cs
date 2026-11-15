@@ -11,7 +11,7 @@ public class DeliveryZone : MonoBehaviour
     {
         Rigidbody rb = other.attachedRigidbody;
         
-        if(rb == null || rb.isKinematic || !rb.useGravity) return;
+        if(rb == null || !rb.CompareTag("Box")) return;
 
         if(!counted.Add(rb)) return;
 
