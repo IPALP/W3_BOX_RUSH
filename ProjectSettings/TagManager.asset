@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 3
   tags:
   - Box
+  - CardboardBox
+  - WoodenBox
+  - JunkBox
   layers:
   - Default
   - TransparentFX

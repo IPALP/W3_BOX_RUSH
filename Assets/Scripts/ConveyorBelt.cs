@@ -53,6 +53,10 @@ public class ConveyorBelt : MonoBehaviour
             Vector3 flat = new Vector3(v.x, 0f, v.z);
             flat = Vector3.MoveTowards(flat, targetVelocity, acceleration * Time.fixedDeltaTime);
             rb.linearVelocity = new Vector3(flat.x, v.y, flat.z);
+
+            // Adaugat trebuie testat 2 linii
+            rb.constraints = RigidbodyConstraints.FreezeRotationX;
+            rb.constraints = RigidbodyConstraints.FreezeRotationZ;
         }
     }
 

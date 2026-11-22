@@ -54,7 +54,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 05c6af759b427442c9d8fad38631c956, type: 3}
       propertyPath: m_TagString
-      value: Box
+      value: JunkBox
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

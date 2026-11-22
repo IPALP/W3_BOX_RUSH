@@ -54,7 +54,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1d548841794f040338dc8534bbd36f35, type: 3}
       propertyPath: m_TagString
-      value: Box
+      value: CardboardBox
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

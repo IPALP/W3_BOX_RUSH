@@ -1,23 +1,29 @@
 using UnityEngine;
-using System.Collections.Generic;
+
 public class DeliveryZone : MonoBehaviour
 {
-  public int points = 10;
-  [Tooltip("Seconds the box stays visible after landing, before if dissapears")]
-  public float destroyDelay = 0.5f;
+    [SerializeField] private string acceptedTag = "CardboardBox";
+    [SerializeField] private int points = 10;
 
-  readonly  HashSet<Rigidbody> counted = new HashSet<Rigidbody>();
-    void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         Rigidbody rb = other.attachedRigidbody;
-        
-        if(rb == null || !rb.CompareTag("Box")) return;
+        if(rb == null) return;
 
-        if(!counted.Add(rb)) return;
+        GameObject box = rb.gameObject;
 
-        if(GameManager.Instance != null)
+        if(box.CompareTag(acceptedTag))
+        {
             GameManager.Instance.AddScore(points);
-
-        Destroy(rb.gameObject, destroyDelay);
+            Destroy(box);
+        }
+        else if(box.CompareTag("JunkBox"))
+        {
+            Destroy(box);
+        }
+        else
+        {
+            Destroy(box);
+        }
     }
 }
