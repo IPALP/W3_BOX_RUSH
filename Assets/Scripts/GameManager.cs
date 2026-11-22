@@ -52,8 +52,6 @@ public class GameManager : MonoBehaviour
 
         int total = Mathf.CeilToInt(timeLeft);
         GUI.Label(new Rect(20, 20, 600, size*2), "Score: " + score, style);
-        GUI.Label(new Rect(20, 20 + size * 1.3f, 600, size *2), "Time: " + (total / 60) + ":" + (total % 60).ToString("00"), style);
-
         if(IsOver)
         {
             var big = new GUIStyle(style) { alignment = TextAnchor.MiddleCenter, fontSize = size *2};
